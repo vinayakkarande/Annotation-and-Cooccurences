@@ -1,4 +1,4 @@
- setup Reuired Libraries
+ setup Required Libraries
 if (!require(shiny)){install.packages("shiny")}
 if (!require(udpipe)){install.packages("udpipe")}
 if (!require(textrank)){install.packages("textrank")}
@@ -20,11 +20,13 @@ library(ggplot2)
 library(wordcloud)
 library(stringr)
 
- 
-  # library("lattice", lib.loc="C:/Program Files/R/R-3.4.3/library")
-  # library("igraph", lib.loc="~/R/win-library/3.4")
-  # library("ggraph", lib.loc="~/R/win-library/3.4")
-  # library("ggplot2", lib.loc="~/R/win-library/3.4")
-  # library("wordcloud", lib.loc="~/R/win-library/3.4")
-  # library("stringr", lib.loc="~/R/win-library/3.4")
+# library("shiny",lib.loc="C:/Program Files/R/R-3.4.3/library")
+# library("udpipe",lib.loc="C:/Program Files/R/R-3.4.3/library")
+# library("textrank",lib.loc="C:/Program Files/R/R-3.4.3/library")
+# library("lattice", lib.loc="C:/Program Files/R/R-3.4.3/library")
+# library("igraph", lib.loc="~/R/win-library/3.4")
+# library("ggraph", lib.loc="~/R/win-library/3.4")
+# library("ggplot2", lib.loc="~/R/win-library/3.4")
+# library("wordcloud", lib.loc="~/R/win-library/3.4")
+# library("stringr", lib.loc="~/R/win-library/3.4")
 
