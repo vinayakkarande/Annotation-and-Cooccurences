@@ -1,4 +1,4 @@
- setup Required Libraries
+#setup Required Libraries
 if (!require(shiny)){install.packages("shiny")}
 if (!require(udpipe)){install.packages("udpipe")}
 if (!require(textrank)){install.packages("textrank")}
