@@ -41,6 +41,8 @@ shinyServer(function(input, output) {
  output$dout1=renderDataTable({
    if (is.null(input$file)) { return(NULL) }
    else{
+     x=input$rows
+     
      temp=annotation()[,-4]
        return(temp)
    }
@@ -93,6 +95,26 @@ shinyServer(function(input, output) {
     }
   )
   
+  # Download data files
+  output$downloadData1 <- downloadHandler(
+    filename = function() { "Game of Thrones IMDB reviews.txt" },
+    content = function(file) {
+      write.csv(read.csv("data/Game of Thrones IMDB reviews.txt"), file, row.names=F)
+    }
+  )
+  output$downloadData2 <- downloadHandler(
+    filename = function() { "ice-cream data.txt" },
+    content = function(file) {
+      write.csv(read.csv("data/ice-cream data.txt"), file, row.names=F)
+    }
+  )
+  
+  output$downloadData3 <- downloadHandler(
+    filename = function() { "Iron man reviews.txt" },
+    content = function(file) {
+      write.csv(read.csv("data/Iron man reviews.txt"), file, row.names=F)
+    }
+  )
   
   
 })
